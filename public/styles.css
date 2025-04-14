@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+form {
+    margin: 20px 0;
+}
+h1, h2 {
+    color: #333;
+}
+p {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

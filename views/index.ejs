@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR & Translate</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>OCR & Dịch Văn Bản</h1>
+    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Tải lên</button>
+    </form>
+
+    <% if (text) { %>
+        <h2>Kết quả OCR:</h2>
+        <p><%= text %></p>
+        
+        <h2>Văn bản dịch:</h2>
+        <p><%= viText %></p>
+
+        <h2>Tải PDF:</h2>
+        <a href="<%= pdfFile %>" download>Download PDF</a>
+    <% } %>
+</body>
+</html>
